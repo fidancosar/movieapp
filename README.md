@@ -4,6 +4,7 @@ Aim:
 This project aims to help you develop a movie viewing application that will help you understand Spring Boot and basic CRUD (Create, Read, Update, Delete) operations. This project will also provide experience in relational database management and RESTful web services.
 
 Prerequisites
+
 You need following softwares before running this application.
 1. Java 17 SDK
 2. Apache Maven 4.0.0 build tool
