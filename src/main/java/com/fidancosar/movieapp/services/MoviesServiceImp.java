@@ -7,6 +7,7 @@ import com.fidancosar.movieapp.repositories.MoviesRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -32,5 +33,15 @@ public class MoviesServiceImp  implements MoviesService{
         Optional<Movies> moviesOptional = moviesRepository.findById(id);
         Movies movies = moviesOptional.orElseThrow(()-> new RuntimeException("Id bulunamadı."));
         return moviesRepository.getById(id);
+    }
+
+    @Override
+    public List<Movies> getAll() {
+        return moviesRepository.findAll();
+    }
+
+    @Override
+    public void deleteByMovieId(long deleteByMovieId) {
+
     }
 }
